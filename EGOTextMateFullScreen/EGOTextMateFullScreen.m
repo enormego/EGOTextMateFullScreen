@@ -38,6 +38,14 @@ static BOOL hasSwizzled = NO;
 				window.collectionBehavior = NSWindowCollectionBehaviorFullScreenPrimary;
 			}
 		}
+		
+		// Add the full screen menu item shortcut
+		for(NSMenuItem* item in [NSApplication sharedApplication].mainMenu.itemArray) {
+			if(![item hasSubmenu]) continue;
+			if(![item.title isEqualToString:NSLocalizedString(@"View", @"View")]) continue;
+			[item.submenu addItemWithTitle:@"" action:@selector(toggleFullScreen:) keyEquivalent:@"f"].keyEquivalentModifierMask = NSControlKeyMask | NSAlternateKeyMask;
+			break;
+		}
 	}
 }
 

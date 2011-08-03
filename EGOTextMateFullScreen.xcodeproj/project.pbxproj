@@ -242,6 +242,7 @@
 		9AA3EA3213BFDA6C0057B4CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EGOTextMateFullScreen/EGOTextMateFullScreen-Prefix.pch";
 				INFOPLIST_FILE = "EGOTextMateFullScreen/EGOTextMateFullScreen-Info.plist";
@@ -254,6 +255,7 @@
 		9AA3EA3313BFDA6C0057B4CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EGOTextMateFullScreen/EGOTextMateFullScreen-Prefix.pch";
 				INFOPLIST_FILE = "EGOTextMateFullScreen/EGOTextMateFullScreen-Info.plist";
