@@ -7,7 +7,7 @@
 //
 
 #import "EGOTextMateFullScreen.h"
-#import </Developer/SDKs/MacOSX10.7.sdk/usr/include/objc/objc-class.h>
+#import <objc/objc-class.h>
 #import "OakDocumentController_EGOTextMateFullScreen.h"
 #import "OakProjectController_EGOTextMateFullScreen.h"
 
